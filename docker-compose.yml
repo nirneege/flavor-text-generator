@@ -1,0 +1,21 @@
+services:
+  devcontainer:
+    container_name: devcontainer
+    build:
+      context: .
+      dockerfile: docker/devcontainer.Dockerfile
+      args:
+        USER_NAME: ${DEVCONTAINER_USER_NAME}
+        USER_ID: ${DEVCONTAINER_USER_ID}
+        GROUP_ID: ${DEVCONTAINER_GROUP_ID}
+    networks:
+      flavor-text-generator:
+    tty: true
+    stdin_open: true
+    env_file: .env
+    volumes:
+      - ./:/workspace/:cached
+    command: sleep infinity
+
+networks:
+  flavor-text-generator:
