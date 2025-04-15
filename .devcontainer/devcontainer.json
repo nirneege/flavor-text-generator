@@ -12,9 +12,20 @@
         "vivaxy.vscode-conventional-commits",
         "mikestead.dotenv",
         "ms-azuretools.vscode-docker",
-        "redhat.vscode-yaml"
+        "redhat.vscode-yaml",
+        "charliermarsh.ruff"
       ],
-      "settings": {}
+      "settings": {
+        "[python]": {
+          "editor.defaultFormatter": "charliermarsh.ruff",
+          "editor.codeActionsOnSave": {
+              "source.fixAll.ruff": "explicit",
+              "source.organizeImports.ruff": "explicit"
+          },
+          "editor.formatOnSave": true
+        },
+        "files.insertFinalNewline": true
+      }    
     }
   },
   "features": {
