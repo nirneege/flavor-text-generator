@@ -13,7 +13,8 @@
         "mikestead.dotenv",
         "ms-azuretools.vscode-docker",
         "redhat.vscode-yaml",
-        "charliermarsh.ruff"
+        "charliermarsh.ruff",
+        "ms-python.python"
       ],
       "settings": {
         "[python]": {
@@ -32,8 +33,8 @@
     "ghcr.io/devcontainers/features/git:1": {},
     "ghcr.io/devcontainers/features/docker-outside-of-docker:1": {}
   },
-  "remoteUser": "vscode"
-  // "postCreateCommand": "sh ./.devcontainer/postCreateCommand.sh"
+  "remoteUser": "vscode",
+  "postCreateCommand": "sh .devcontainer/postCreateCommand.sh"
   // "forwardPorts": [],
   // "runServices": [],
   // "shutdownAction": "none",
