@@ -5,7 +5,8 @@
     "Ruff",
     "Pyright",
     "Django",
-    "Generator"
+    "Generator",
+    "env"
   ],
   "[python]": {
     "editor.formatOnSave": true,
