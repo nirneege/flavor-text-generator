@@ -3,7 +3,8 @@
     "Docker",
     "uv",
     "Ruff",
-    "Pyright"
+    "Pyright",
+    "Django"
   ],
   "[python]": {
     "editor.formatOnSave": true,
