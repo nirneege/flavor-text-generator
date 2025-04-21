@@ -6,7 +6,8 @@
     "Pyright",
     "Django",
     "Generator",
-    "env"
+    "env",
+    "Config"
   ],
   "[python]": {
     "editor.formatOnSave": true,
