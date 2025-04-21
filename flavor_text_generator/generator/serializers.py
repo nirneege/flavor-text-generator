@@ -6,7 +6,18 @@ class FlavorTextRequestSerializer(TSerializer):
     """フレーバーテキスト生成リクエストのシリアライザ"""
 
     target_type = serializers.ChoiceField(
-        choices=["item", "character", "location", "skill"]
+        choices=[
+            "item",
+            "character",
+            "location",
+            "skill",
+            "enemy",
+            "quest",
+            "weapon",
+            "armor",
+            "accessory",
+            "event",
+        ]
     )
     name = serializers.CharField(max_length=100)
     description = serializers.CharField()
